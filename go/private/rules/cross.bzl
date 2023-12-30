@@ -121,9 +121,6 @@ _go_cross_kwargs = {
             build flag to the value provided for `sdk_version` here.
             """,
         ),
-        "_allowlist_function_transition": attr.label(
-            default = "@bazel_tools//tools/allowlists/function_transition_allowlist",
-        ),
     },
     "cfg": go_cross_transition,
     "doc": """This wraps an executable built by `go_binary` to cross compile it

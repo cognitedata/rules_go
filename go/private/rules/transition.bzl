@@ -308,9 +308,6 @@ go_reset_target = rule(
             mandatory = True,
             cfg = go_tool_transition,
         ),
-        "_allowlist_function_transition": attr.label(
-            default = "@bazel_tools//tools/allowlists/function_transition_allowlist",
-        ),
     },
     doc = """Forwards providers from a target and applies go_tool_transition.
 
@@ -331,9 +328,6 @@ non_go_reset_target = rule(
         "dep": attr.label(
             mandatory = True,
             cfg = non_go_tool_transition,
-        ),
-        "_allowlist_function_transition": attr.label(
-            default = "@bazel_tools//tools/allowlists/function_transition_allowlist",
         ),
     },
     doc = """Forwards providers from a target and applies non_go_tool_transition.

@@ -174,9 +174,6 @@ go_proto_library = rule(
         "_go_context_data": attr.label(
             default = "//:go_context_data",
         ),
-        "_allowlist_function_transition": attr.label(
-            default = "@bazel_tools//tools/allowlists/function_transition_allowlist",
-        ),
     },
     toolchains = [GO_TOOLCHAIN],
 )

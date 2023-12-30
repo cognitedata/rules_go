@@ -629,9 +629,6 @@ go_context_data = rule(
             mandatory = True,
             providers = [GoStdLib],
         ),
-        "_allowlist_function_transition": attr.label(
-            default = "@bazel_tools//tools/allowlists/function_transition_allowlist",
-        ),
     },
     doc = """go_context_data gathers information about the build configuration.
     It is a common dependency of all Go targets.""",

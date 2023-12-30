@@ -43,9 +43,6 @@ stdlib = rule(
             default = "//:go_config",
             providers = [GoConfigInfo],
         ),
-        "_allowlist_function_transition": attr.label(
-            default = "@bazel_tools//tools/allowlists/function_transition_allowlist",
-        ),
     },
     doc = """stdlib builds the standard library for the target configuration
 or uses the precompiled standard library from the SDK if it is suitable.""",

@@ -42,8 +42,5 @@ stdlib_files = rule(
             providers = [GoStdLib],
             cfg = force_rebuild_transition,
         ),
-        "_allowlist_function_transition": attr.label(
-            default = "@bazel_tools//tools/allowlists/function_transition_allowlist",
-        ),
     },
 )

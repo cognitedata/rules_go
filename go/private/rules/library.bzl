@@ -176,9 +176,6 @@ go_library = rule(
             """,
         ),
         "_go_context_data": attr.label(default = "//:go_context_data"),
-        "_allowlist_function_transition": attr.label(
-            default = "@bazel_tools//tools/allowlists/function_transition_allowlist",
-        ),
     },
     toolchains = [GO_TOOLCHAIN],
     doc = """This builds a Go library from a set of source files that are all part of

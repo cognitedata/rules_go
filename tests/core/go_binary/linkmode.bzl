@@ -28,8 +28,5 @@ linkmode_pie_wrapper = rule(
         "target": attr.label(
             cfg = _linkmode_pie_transition,
         ),
-        "_allowlist_function_transition": attr.label(
-            default = "@bazel_tools//tools/allowlists/function_transition_allowlist",
-        ),
     },
 )

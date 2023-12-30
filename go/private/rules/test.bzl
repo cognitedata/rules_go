@@ -437,9 +437,6 @@ _go_test_kwargs = {
             default = configuration_field(fragment = "coverage", name = "output_generator"),
             cfg = "exec",
         ),
-        "_allowlist_function_transition": attr.label(
-            default = "@bazel_tools//tools/allowlists/function_transition_allowlist",
-        ),
     },
     "executable": True,
     "test": True,

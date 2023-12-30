@@ -407,9 +407,6 @@ _go_binary_kwargs = {
             default = "//go/config:empty",
         ),
         "_go_context_data": attr.label(default = "//:go_context_data", cfg = go_transition),
-        "_allowlist_function_transition": attr.label(
-            default = "@bazel_tools//tools/allowlists/function_transition_allowlist",
-        ),
     },
     "toolchains": [GO_TOOLCHAIN],
     "doc": """This builds an executable from a set of source files,

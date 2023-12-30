@@ -122,8 +122,7 @@ bzl_library(
     name = "test",
     srcs = ["test.bzl"],
     visibility = [
-        "//docs:__subpackages__",
-        "//go:__subpackages__",
+        "//visibility:public",
     ],
     deps = [
         "//go/private:common",
